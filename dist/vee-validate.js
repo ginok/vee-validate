@@ -1075,6 +1075,9 @@ var length = function (value, ref) {
   if (value === undefined || value === null) {
     return false;
   }
+  
+  // cast to number.
+  length = Number(length);
 
   if (!value.length) {
     value = toArray(value);
